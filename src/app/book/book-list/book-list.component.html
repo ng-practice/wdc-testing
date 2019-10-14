@@ -3,6 +3,7 @@
   <mat-list-item
     [routerLink]="[book.isbn]"
     *ngFor="let book of books$ | async"
+    data-testid="book-single"
     class="book-single"
   >
     <mat-icon mat-list-icon>book</mat-icon>
